@@ -22,7 +22,7 @@ To create a backup:
 
 - Select the "backup_script.gs", and in the tools menu, select the "WRITEDATA" function.
 
-![](https://drive.google.com/file/d/1fGZOQ1xHu_1F-An32_7sXGM99dGNn5T1/view?usp=sharing)
+![Screen Shot 2021-05-03 at 13 35 37](https://user-images.githubusercontent.com/51498514/116881256-53852680-ac23-11eb-964b-6df371c68d9f.png)
 
 4- Run the script.
 
@@ -42,7 +42,7 @@ To restore the items previously backed up:
 
 - Once you write the function, pass as a parameter in the function the item that you want to restore (selecting one cell).
 
-![](https://drive.google.com/file/d/1OcntDPmP_7Oa9XVolruJtjvBoctd1JcS/view?usp=sharing)
+![Screen Shot 2021-05-03 at 13 35 50](https://user-images.githubusercontent.com/51498514/116881170-36505800-ac23-11eb-84d8-5a63822185da.png)
 
 - If everything goes well, you'll get a "Success!" message
 
