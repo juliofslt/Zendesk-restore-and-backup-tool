@@ -6,6 +6,8 @@ function RESTORE(arg) {
 
     // PropertiesService.getDocumentProperties().setProperty('encodedInfo', 'Here_your_Base64_encoded_login_info')
     const login = PropertiesService.getDocumentProperties().getProperty("encodedInfo")
+    const subdomain = "remotasks"
+    const
     var cell
   
     try{
@@ -22,7 +24,7 @@ function RESTORE(arg) {
   
     // Determine if POST request is going to be done to triggers or automations
     if(triggerRegex.test(cell.url)){
-      const url = 'https://remotasks.zendesk.com/api/v2/triggers.json'
+      const url = `https://${subdomain}.zendesk.com/api/v2/triggers.json`
       
       // Set request's body information
       const bodyInfo = JSON.stringify({
@@ -49,7 +51,7 @@ function RESTORE(arg) {
       }
     }
     else if(automationRegex.test(cell.url)){
-      const url = 'https://remotasks.zendesk.com/api/v2/automations.json'
+      const url = `https://${subdomain}.zendesk.com/api/v2/automations.json`
       
       // Set request's body information
       const bodyInfo = JSON.stringify({
@@ -76,7 +78,7 @@ function RESTORE(arg) {
       }
     }
     else if(macrosRegex.test(cell.url)){
-      const url = 'https://remotasks.zendesk.com/api/v2/macros.json'
+      const url = `https://${subdomain}.zendesk.com/api/v2/macros.json`
       
       // Set request's body information
       const bodyInfo = JSON.stringify({
