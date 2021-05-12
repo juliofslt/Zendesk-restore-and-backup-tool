@@ -16,8 +16,8 @@
         - Example Input: myemail@yahoo.com/token:reallylongapitokengoeshere
         - Encoded Example: bXllbWFpbEB5YWhvby5jb20vdG9rZW46cmVhbGx5bG9uZ2FwaXRva2VuZ29lc2hlcmU=
     - > [Google Apps Script Properties Service](https://developers.google.com/apps-script/guides/properties)
-  - Replace any instance of "remotasks" with your Zendesk subdomain
-    - Pre-Example: https://remotasks.zendesk.com/api/v2/triggers.json
+  - Replace any instance of "Your_subdomain_here" with your Zendesk subdomain
+    - Pre-Example: https://Your_subdomain_here.zendesk.com/api/v2/triggers.json
     - Post-Example: https://mysubdomain.zendesk.com/api/v2/triggers.json
 
 ---
