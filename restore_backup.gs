@@ -6,7 +6,7 @@ function RESTORE(arg) {
 
     // PropertiesService.getDocumentProperties().setProperty('encodedInfo', 'Here_your_Base64_encoded_login_info')
     const login = PropertiesService.getDocumentProperties().getProperty("encodedInfo")
-    const subdomain = "remotasks"
+    const subdomain = "Your_subdomain_here"
     var cell
   
     try{
