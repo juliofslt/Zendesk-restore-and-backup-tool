@@ -13,7 +13,7 @@ function GETBACKUP(token){
 
   // PropertiesService.getDocumentProperties().setProperty('encodedInfo', 'Here_your_Base64_encoded_login_info')
   const encodedAuthInfo = PropertiesService.getDocumentProperties().getProperty('encodedInfo')
-  const subdomain = "remotasks"
+  const subdomain = "Your_subdomain_here"
   const data = []
   const url = `https://${subdomain}.zendesk.com/api/v2/${token}.json`
   const options = {
