@@ -49,6 +49,14 @@ I recommend creating a new tab per backup, and naming it with the current date y
 
 ### Restore
 
+---
+
+#### Disclaimer!
+
+This **will not edit your existing macro/trigger/automation**. Instead, will create a new one in Zendesk. This is intended to create new ones out of your backup in case any of your macros/triggers/automations get deleted from Zendesk.
+
+---
+
 To restore the items previously backed up:
 
 - In the spreadsheet, use the custom "excel" function "=RESTORE()"
