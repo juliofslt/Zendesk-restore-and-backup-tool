@@ -1,4 +1,4 @@
-## Backup and Restore Tool for Triggers, Automations, and Macros
+## Backup and Restore Tool for Triggers, Automations, Macros & Dynamic Content
 
 ### Initial Setup
 - To use this tool:
@@ -17,8 +17,7 @@
         - Encoded Example: bXllbWFpbEB5YWhvby5jb20vdG9rZW46cmVhbGx5bG9uZ2FwaXRva2VuZ29lc2hlcmU=
     - > [Google Apps Script Properties Service](https://developers.google.com/apps-script/guides/properties)
   - Replace any instance of "Your_subdomain_here" with your Zendesk subdomain
-    - Pre-Example: https://Your_subdomain_here.zendesk.com/api/v2/triggers.json
-    - Post-Example: https://mysubdomain.zendesk.com/api/v2/triggers.json
+    - Example: https://Your_subdomain_here.zendesk.com/api/v2/triggers.json 
 
 ---
 
