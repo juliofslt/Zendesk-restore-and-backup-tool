@@ -20,6 +20,7 @@ function GETBACKUP(token){
   return data
   }
 
+  // PropertiesService.getDocumentProperties().setProperty('encodedInfo', 'Here_your_Base64_encoded_login_info')
   const encodedAuthInfo = PropertiesService.getDocumentProperties().getProperty('encodedInfo')
   const subDomain = "Your_subdomain_here"
   const url = `https://${subDomain}.zendesk.com/api/v2/${token}.json`
