@@ -21,15 +21,15 @@ function GETBACKUP(token){
   }
 
   const encodedAuthInfo = PropertiesService.getDocumentProperties().getProperty('encodedInfo')
-  
-  const url = `https://remotasks.zendesk.com/api/v2/${token}.json`
+  const subDomain = "Your_subdomain_here"
+  const url = `https://${subDomain}.zendesk.com/api/v2/${token}.json`
   const options = {
     headers: { 'Authorization': `Basic ${encodedAuthInfo}` }
   }
 
   // GET Requests
   if(token === "items"){
-    const response = JSON.parse(UrlFetchApp.fetch(`https://remotasks.zendesk.com/api/v2/dynamic_content/${token}.json`, options))
+    const response = JSON.parse(UrlFetchApp.fetch(`https://${subDomain}.zendesk.com/api/v2/dynamic_content/${token}.json`, options))
 
     const data = jsonToString(response, token)
 
