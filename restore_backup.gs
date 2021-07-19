@@ -21,6 +21,7 @@ function RESTORE(arg) {
   }
 
   const login = PropertiesService.getDocumentProperties().getProperty("encodedInfo")
+  const subDomain = "Your_subdomain_here"
   var cell
 
   try{
@@ -38,7 +39,7 @@ function RESTORE(arg) {
 
   // Determine if POST request is going to be done to triggers or automations
   if(triggerRegex.test(cell.url)){
-    const url = 'https://remotasks.zendesk.com/api/v2/triggers.json'
+    const url = `https://${subDomain}.zendesk.com/api/v2/triggers.json`
     
     // Set request's body information
     const bodyInfo = JSON.stringify({
@@ -53,7 +54,7 @@ function RESTORE(arg) {
     
   }
   else if(automationRegex.test(cell.url)){
-    const url = 'https://remotasks.zendesk.com/api/v2/automations.json'
+    const url = `https://${subDomain}.zendesk.com/api/v2/automations.json`
     
     // Set request's body information
     const bodyInfo = JSON.stringify({
@@ -68,7 +69,7 @@ function RESTORE(arg) {
 
   }
   else if(macrosRegex.test(cell.url)){
-    const url = 'https://remotasks.zendesk.com/api/v2/macros.json'
+    const url = `https://${subDomain}.zendesk.com/api/v2/macros.json`
     
     // Set request's body information
     const bodyInfo = JSON.stringify({
@@ -81,7 +82,7 @@ function RESTORE(arg) {
     return postRequest(login, bodyInfo, url)
   }
   else if(dynamicContentRegex.test(cell.url)){
-    const url = 'https://remotasks.zendesk.com/api/v2/dynamic_content/items.json'
+    const url = `https://${subDomain}.zendesk.com/api/v2/dynamic_content/items.json`
 
     const bodyInfo = JSON.stringify({
       item: {
