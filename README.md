@@ -1,5 +1,7 @@
 ## Backup and Restore Tool for Triggers, Automations, Macros & Dynamic Content
 
+This tool uses the Zendesk API and it lets you backup and restore information from your Zendesk instance to a Google Spreadsheet, information such as Triggers, Automations, Macros and Dynamic Content.
+
 ### Initial Setup
 - To use this tool:
   - Create a new spreadsheet in Google Sheets. Once in the spreadsheet, open "Tools" in the naviagtion menu, and click on "Script Editor".
