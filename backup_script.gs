@@ -62,3 +62,15 @@ function WRITEDATA(){
 
 }
 
+function setProperties(){
+  // Get "encodedInfo"
+  // Logger.log(PropertiesService.getDocumentProperties().getProperty('encodedInfo'))
+  
+  // Assign to "encodedInfo" document property the API access credentials (email/password or email/token) converted to Base64
+  // PropertiesService.getDocumentProperties().setProperty('encodedInfo', `${Utilities.base64Encode('Your_email_here/Your_password_here')}`)
+  // PropertiesService.getDocumentProperties().setProperty('encodedInfo', `${Utilities.base64Encode('Your_email_here/token:API_key_here')}`)
+
+  // In case you need to delete your "encodedInfo" to assign a new one, delete the property with this line
+  // PropertiesService.getDocumentProperties().deleteProperty('encodedInfo')
+  
+}
